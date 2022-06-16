@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ch-ZH">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偶尔摸鱼</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="icon" href="./icon/打工人.icon">
+</head>
+<body>
+    <div class="box flex" id="app">
+		
+        <div class="title flex">
+			<div>
+				<a href="https://docs.qq.com/desktop/?needShowTips=1" target="tyClass">
+					<el-button type="info" plain>登录</el-button>
+				</a>
+			</div>
+			<a href="https://docs.qq.com/sheet/DUGxKYW56WlBUWGhR?tab=xh5yf7" target="tyClass">
+				<el-button type="info" plain>体验课表</el-button>
+			</a>
+			
+			<div class="weeks">
+				<el-button type="info" plain>周更</el-button>
+				<!-- 周更表内容 -->
+				<div class="weeksDis">
+					<a href="https://docs.qq.com/sheet/DUGVobE9MbEFrQXV3?u=b21645967b6c4f0ba2ab179a754f66ee&tab=59y3iy" target="tyClass">
+						<el-button type="primary" plain>讲师周报</el-button>
+					</a>
+					<a href="https://docs.qq.com/sheet/DS05SYVd3R2xrbm5P" target="tyClass">
+						<el-button type="primary" plain>教学管理表</el-button>
+					</a>
+				</div>
+			</div>
+			<div class="month weeks">
+				<el-button type="info" plain>月更</el-button>
+				<!-- 月更表内容 -->
+				<div class="monthDis weeksDis">
+					<a href="https://docs.qq.com/sheet/DS1pEVXl4b09ZcHRS?u=b21645967b6c4f0ba2ab179a754f66ee&tab=BB08J3" target="tyClass">
+						<el-button type="primary" plain>讲师数据报表</el-button>
+					</a>
+					<a href="https://docs.qq.com/sheet/DS1hvY2JBTWl1UU5R?u=b21645967b6c4f0ba2ab179a754f66ee&tab=rxs2p5" target="tyClass">
+						<el-button type="primary" plain>讲师课表管理</el-button>
+					</a>
+				</div>
+			</div>
+				
+		</div>
+        <div class="content">
+			<iframe id='iframe' name='tyClass' src='https://docs.qq.com/desktop/?needShowTips=1' frameborder="0">
+			<!-- https://docs.qq.com/desktop/?needShowTips=1 -->
+
+			</iframe>
+		</div>
+    </div>
+	
+	<script src="./vue/vue.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+		el: '#app',
+		data:{
+			url:''
+		}
+		
+		})
+  	</script>
+	<script>
+		
+	</script>
+	
+</body>
+</html>

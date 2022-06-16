@@ -1,0 +1,58 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.flex{
+    display: flex;
+}
+.box{
+    height:100vh;
+    background:rgba(20, 21, 20, 0.1);
+    overflow: auto;
+}
+.title{
+    flex:1;
+    flex-direction: column;
+}
+.content{
+    flex:8;
+}
+.title div{
+    height:50px;
+    text-align:center;
+    line-height: 50px;
+}
+iframe{
+    width:100%;
+    height:100vh;
+}
+.box .title .weeks{
+    cursor: pointer;
+    position: relative;
+}
+.box .title .weeks .weeksDis{
+    display: none;
+    width: 110px;
+    position: absolute;
+    left: 140px;
+    top: -29px;
+}
+.box .title .weeks:hover .weeksDis{
+    display: block;
+}
+.el-button--info.is-plain {
+    color: #909399;
+    background: #f4f4f5;
+    border-color: #d3d4d6;
+    width: 100%;
+}
+.el-button--primary.is-plain:focus, .el-button--primary.is-plain:hover {
+    background: #409EFF;
+    border-color: #409EFF;
+    color: #FFF;
+    margin-left:5%;
+}
